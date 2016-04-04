@@ -10,7 +10,7 @@
 
 
 [alias]
-	gc = commit -m
+	c = commit -m
 	up = pull
 	p = push
 	s = status -s
