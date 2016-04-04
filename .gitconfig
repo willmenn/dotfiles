@@ -12,6 +12,8 @@
 [alias]
 	c = commit -am
 	up = pull
+	upr = pull --rebase
+	rc = rebase --continue 
 	p = push
 	s = status -s
 	sclone = clone --depth=1
