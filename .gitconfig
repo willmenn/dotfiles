@@ -7,3 +7,14 @@
 	helper=cache
 [diff]
 	tool=vimdiff
+
+
+[alias]
+	gc = commit -m
+	up = pull
+	p = push
+	s = status -s
+	sclone = clone --depth=1
+	co = checkout
+	df = diff --color --color-words --abbrev
+	lg = log --color --graph
