@@ -1,0 +1,11 @@
+
+#Setting Alias for cd
+alias ...="cd../../"
+alias ....="cd../../../"
+alias .....="cd../../../../"
+
+#Setting alias for ls
+alias lsm='ls -lha | more'
+alias lsl="ls -lha | less"
+
+

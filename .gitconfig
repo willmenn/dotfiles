@@ -1,0 +1,9 @@
+[user]
+	name= William Ahrons
+	email= william.ahrons@gmail.com
+[core]
+	editor= vim
+[credential]
+	helper=cache
+[diff]
+	tool=vimdiff
