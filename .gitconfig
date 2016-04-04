@@ -20,3 +20,4 @@
 	co = checkout
 	df = diff --color --color-words --abbrev
 	lg = log --color --graph
+	st = stash
