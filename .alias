@@ -9,3 +9,20 @@ alias lsm='ls -lha | more'
 alias lsl="ls -lha | less"
 
 
+#Setting catalina Alias
+alias catalina=$CATALINA_HOME/bin/catalina.sh
+ 
+#Setting Desenvolvimento Alias
+alias dev='cd /Users/wahrons/Documents/Desenvolvimento'
+ 
+#Setting Maven Alias
+alias maven='cd /Users/wahrons/Documents/Desenvolvimento/Maven'
+ 
+#Setting Workspace Alias
+alias workspace='cd /Users/wahrons/Documents/Desenvolvimento/Workspaces'
+ 
+#Setting Workspace TWU Alias
+alias workspaceTWU='cd /Users/wahrons/Documents/Desenvolvimento/Workspaces/ThoughtWorks/TWU/Prep/Welcome/workspace'
+  
+
+

@@ -20,21 +20,3 @@ export POSTGRES_HOME=/Applications/Postgres.app/Contents/Versions/9.5
 #Setting PATH
 export PATH=${PATH}:${JAVA_HOME}/bin:${M2_HOME}/bin:${ANT_HOME}/bin:${GRADLE_HOME}/bin:${CATALINA_HOME}/bin:${POSTGRES_HOME}/bin
 
-#Setting Alias
-
-#Setting catalina Alias
-alias catalina=$CATALINA_HOME/bin/catalina.sh
-
-#Setting Desenvolvimento Alias
-alias dev='cd /Users/wahrons/Documents/Desenvolvimento'
-
-#Setting Maven Alias
-alias maven='cd /Users/wahrons/Documents/Desenvolvimento/Maven'
-
-#Setting Workspace Alias
-alias workspace='cd /Users/wahrons/Documents/Desenvolvimento/Workspaces'
-
-#Setting Workspace TWU Alias
-alias workspaceTWU='cd /Users/wahrons/Documents/Desenvolvimento/Workspaces/ThoughtWorks/TWU/Prep/Welcome/workspace'
-
-source ~/.alias
