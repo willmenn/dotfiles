@@ -20,4 +20,5 @@ export POSTGRES_HOME=/Applications/Postgres.app/Contents/Versions/9.5
 #Setting PATH
 export PATH=${PATH}:${JAVA_HOME}/bin:${M2_HOME}/bin:${ANT_HOME}/bin:${GRADLE_HOME}/bin:${CATALINA_HOME}/bin:${POSTGRES_HOME}/bin
 
-source ~/.alias
+
+
