@@ -16,7 +16,7 @@
 	rc = rebase --continue 
 	p = push
 	s = status -s
-	sa = status -sa
+	sb = status -sb
 	sclone = clone --depth=1
 	co = checkout
 	df = diff --color --color-words --abbrev
