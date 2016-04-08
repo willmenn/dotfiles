@@ -8,6 +8,14 @@ alias .....="cd ../../../.."
 alias lsm='ls -lha | more'
 alias lsl="ls -lha | less"
 
+#Setting alias for clear
+alias cl='clear'
+
+#Setting alias for gradlew clean build
+alias gcb='./gradlew clean build'
+
+#Setting alias for maven
+alias mcp='mvn clean package'
 
 #Setting catalina Alias
 alias catalina=$CATALINA_HOME/bin/catalina.sh
