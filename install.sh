@@ -15,4 +15,4 @@ ln -sf $(pwd)/.bash_profile ~/.bash_profile
 
 ln -sf $(pwd)/.alias ~/.alias
 
-
+vim +PlugInstall +PlugClean +qall
