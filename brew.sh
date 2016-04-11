@@ -5,6 +5,8 @@ brew update
 # Upgrade any already-installed formulae
 brew upgrade
 
+brew  cask update
+
 brew cask install iterm2
 brew cask install google-chrome-canary
 
