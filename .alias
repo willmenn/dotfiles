@@ -13,6 +13,7 @@ alias cl='clear'
 
 #Setting alias for gradlew clean build
 alias gcb='./gradlew clean build'
+alias gjr='./gradlew  jettyRun'
 
 #Setting alias for maven
 alias mcp='mvn clean package'
