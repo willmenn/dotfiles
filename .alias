@@ -11,7 +11,7 @@ alias lsl="ls -lha | less"
 #Setting alias for clear
 alias cl='clear'
 
-#Setting alias for gradlew clean build
+#Setting alias for gradlew commum tasks
 alias gcb='./gradlew clean build'
 alias gjr='./gradlew  jettyRun'
 
