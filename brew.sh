@@ -15,6 +15,7 @@ brew install git
 brew install tree
 brew install node
 brew install zsh
+brew install figlet
 
 brew cleanup
 
