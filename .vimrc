@@ -14,9 +14,11 @@ Plug 'https://github.com/wikitopian/hardmode.git'
 "Instlling nerdtree
 Plug 'https://github.com/scrooloose/nerdtree.git'
 
+"Installling vim-devcons
+Plug 'https://github.com/ryanoasis/vim-devicons.git'
+
 "Enabling Hard mode
 autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
-
 
 call plug#end()
 
