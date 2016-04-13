@@ -5,6 +5,10 @@ colorscheme tayra
 
 "Setting number in lines
 set number
+set showmode	"Show current mode
+set showcmd	"Show already typed keys
+set incsearch	"Will highlight when searching with / or ?
+set hlsearch	"Keep matches highlighted
 
 call plug#begin('~/.vim/plugged')
 
