@@ -2,6 +2,13 @@
 
 sh  -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
+#Creating folders for backup,sawp and viminfo
+
+mkdir .vim/files
+mkdir .vim/files/backup
+mkdir .vim/files/swap
+mkdir .vim/files/info
+
 #Creating symbolic link for config files
 
 

@@ -27,3 +27,13 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 map <C-n> :NERDTreeToggle<CR>
 
+"Setting backup folder, swap folder and undo folder.
+set backup
+set backupdir 	=~/.vim/files/backup/
+set backupext 	=-vimbackup
+set backupskip	=
+set directory	=~/.vim/files/swap/
+set updatecount	=100
+set undofile
+set undodir	=~/.vim/files/undo/
+set viminfo	='100,n~/.vim/files/info/viminfo
