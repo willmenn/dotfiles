@@ -30,6 +30,8 @@ brew install docker
 
 brew install boot2docker
 
+#Setting Java
+
 brew cask install java7
 brew install jenv
 

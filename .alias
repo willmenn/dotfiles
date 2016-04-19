@@ -30,7 +30,6 @@ alias maven='cd /Users/wahrons/Documents/Desenvolvimento/Maven'
 #Setting Workspace Alias
 alias workspace='cd /Users/wahrons/Documents/Desenvolvimento/Workspaces'
  
-#Setting Workspace TWU Alias
 alias workspaceTWU='cd /Users/wahrons/Documents/Desenvolvimento/Workspaces/ThoughtWorks/TWU/Prep/Welcome/workspace'
   
 
