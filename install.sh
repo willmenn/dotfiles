@@ -10,6 +10,7 @@ mkdir .vim/files/swap
 mkdir .vim/files/info
 
 mkdir ~/Documents/Desenvolvimento
+mkdir ~/Documents/Desenvolvimento/Workspaces
 
 #Creating symbolic link for config files
 
