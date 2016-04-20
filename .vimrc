@@ -3,12 +3,15 @@ syntax enable
 "Setting theme Tayra from https://github.com/the31k/vim-colors-tayra
 colorscheme tayra 
 
-"Setting number in lines
-set number
-set showmode	"Show current mode
-set showcmd	"Show already typed keys
-set incsearch	"Will highlight when searching with / or ?
-set hlsearch	"Keep matches highlighted
+set number	 	" show line numbers
+set showmode		" show current mode
+set showcmd		" show already typed keys
+set incsearch		" will highlight when searching with / or ?
+set hlsearch		" keep matches highlighted
+set title		" show file in titlebar
+set textwidth=79	" break the line when gets in 79 char
+set autoindent smartindent " turn on auto/smart indenting
+set ruler		" show cursor position in status bar
 
 call plug#begin('~/.vim/plugged')
 
