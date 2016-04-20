@@ -3,6 +3,8 @@ syntax enable
 "Setting theme Tayra from https://github.com/the31k/vim-colors-tayra
 colorscheme tayra 
 
+filetype on		" automatic file type detection
+
 set number	 	" show line numbers
 set showmode		" show current mode
 set showcmd		" show already typed keys
