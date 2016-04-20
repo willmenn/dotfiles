@@ -35,6 +35,8 @@ brew install boot2docker
 brew cask install java7
 brew install jenv
 
+brew install diff-so-fancy
+
 brew cleanup
 
 

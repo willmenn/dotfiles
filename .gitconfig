@@ -1,13 +1,43 @@
 [user]
 	name= William Ahrons
 	email= william.ahrons@gmail.com
+
 [core]
 	editor= vim
+
 [credential]
 	helper=cache
+
 [diff]
 	tool=vimdiff
 
+[pager]
+	diff = diff-so-fancy | less --tabs=4 -RFX
+	show = diff-so-fancy | less --tabs=4 -RFX
+
+[color]
+	ui= always
+	
+[color "diff"]
+	meta = yellow bold
+	commit = green bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = "red bold 52"
+	newNormal = "green bold"
+	newHighlight = "green bold 22"
+
+[color "branch"]
+	current = yellow reverse
+	local = blue reverse
+	remote = green
+[iterative]
+	diffFilter = "diff-so-fancy"
 
 [alias]
 	c = commit -am
