@@ -28,9 +28,9 @@ alias dev='cd /Users/wahrons/Documents/Desenvolvimento'
 alias maven='cd /Users/wahrons/Documents/Desenvolvimento/Maven'
  
 #Setting Workspace Alias
-alias workspace='cd /Users/wahrons/Documents/Desenvolvimento/Workspaces'
+alias workspace='cd /Users/wahrons/Documents/Desenvolvimento/Workspace'
  
 #Setting dotfiles alias
- alias dot='cd /Users/wahrons/Documents/Desenvolvimento/Workspaces/dotfiles' 
+ alias dotf='cd /Users/wahrons/Documents/Desenvolvimento/Workspace/dotfiles' 
 
 
