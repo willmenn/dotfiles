@@ -17,6 +17,7 @@ brew cask install slack
 # Installing commum cli tools
 brew install git
 brew install tree
+brew install npm
 brew install node
 brew install zsh
 brew install figlet
