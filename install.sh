@@ -34,6 +34,14 @@ chmod +x ~/Documents/Desenvolvimento/Tomcat/7.0.69/apache-tomcat-7.0.69/bin/cata
 
 fi
 
+#Setting Ant Apache
+mkdir -p ~/Documents/Desenvolvimento/AntApache/1.9.7
+if [ ! -f ~/Documents/Desenvolvimento/AntApache/ant.zip ]; then
+	curl -o ~/Documents/Desenvolvimento/AntApache/ant.zip http://mirror.nbtelecom.com.br/apache//ant/binaries/apache-ant-1.9.7-bin.zip
+
+	unzip ~/Documents/Desenvolvimento/AntApache/ant.zip -d ~/Documents/Desenvolvimento/AntApache/1.9.7
+fi
+
 #Creating symbolic link for config files
 
 ln -sf $(pwd)/.gitconfig ~/.gitconfig
