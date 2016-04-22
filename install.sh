@@ -31,6 +31,7 @@ curl -o ~/Documents/Desenvolvimento/Tomcat/tomcat.zip	http://ftp.unicamp.br/pub/
 unzip ~/Documents/Desenvolvimento/Tomcat/tomcat.zip -d ~/Documents/Desenvolvimento/Tomcat/7.0.69
 
 chmod +x ~/Documents/Desenvolvimento/Tomcat/7.0.69/apache-tomcat-7.0.69/bin/catalina.sh
+
 fi
 
 #Creating symbolic link for config files
