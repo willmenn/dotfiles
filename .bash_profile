@@ -12,7 +12,7 @@ export ANT_HOME=/Users/wahrons/Documents/Desenvolvimento/Ant/1.9.6/apache-ant-1.
 export GRADLE_HOME=/Users/wahrons/Documents/Desenvolvimento/Gradle/2.10/gradle-2.10
 
 #Setting Catalina para tomcat
-export CATALINA_HOME=/Users/wahrons/Documents/Desenvolvimento/Tomcat/7.0.67/apache-tomcat-7.0.67
+export CATALINA_HOME=/Users/wahrons/Documents/Desenvolvimento/Tomcat/7.0.69/apache-tomcat-7.0.69
 
 #Setting Postgres
 export POSTGRES_HOME=/Applications/Postgres.app/Contents/Versions/9.5
