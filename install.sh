@@ -50,6 +50,8 @@ ln -sf $(pwd)/.zshrc  ~/.zshrc
 
 ln -sf $(pwd)/.vimrc ~/.vimrc
 
+ln -sf $(pwd)/.ideiavimrc ~/.ideiavimrc
+
 ln -sf $(pwd)/.vim  ~/.vim
 
 ln -sf $(pwd)/.bash_profile ~/.bash_profile
