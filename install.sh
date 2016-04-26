@@ -45,6 +45,14 @@ if [ ! -f $ANTFOLDER/ant.zip ]; then
 	unzip $ANTFOLDER/ant.zip -d $ANTFOLDER/1.9.7
 fi
 
+#Setting guava plugin for IntelliJ
+GUAVAFOLDER=$DEVFOLDER/Plugin
+mkdir -p $GUAVAFOLDER
+if [ ! -d $GUAVAFOLDER/guavagenerators ]; then
+
+	git clone https://github.com/willmenn/guavagenerators.git $GUAVAFOLDER
+
+fi
 #Creating symbolic link for config files
 
 ln -sf $(pwd)/.gitconfig ~/.gitconfig
