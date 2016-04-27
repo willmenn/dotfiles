@@ -8,7 +8,9 @@ mkdir .vim/files
 mkdir .vim/files/backup
 mkdir .vim/files/swap
 mkdir .vim/files/info
+
 DEVFOLDER=~/Documents/Desenvolvimento
+
 mkdir $DEVFOLDER
 mkdir $DEVFOLDER/Workspace
 
@@ -46,14 +48,19 @@ if [ ! -f $ANTFOLDER/ant.zip ]; then
 fi
 
 #Setting guava plugin for IntelliJ
-GUAVAFOLDER=$DEVFOLDER/Plugin
-mkdir -p $GUAVAFOLDER
-if [ ! -d $GUAVAFOLDER/guavagenerators ]; then
+PLUGINFOLDER=$DEVFOLDER/Plugin
+mkdir -p $PLUGINFOLDER
+if [ ! -d $PLUGINFOLDER/guavagenerators ]; then
 
-	git clone https://github.com/willmenn/guavagenerators.git $GUAVAFOLDER
+	git clone https://github.com/willmenn/guavagenerators.git $PLUGINFOLDER
 
 fi
+
+#Setting git standup
+curl -L	https://raw.githubusercontent.com/kamranahmedse/git-standup/master/installer.sh  | sudo sh
+
 #Creating symbolic link for config files
+
 
 ln -sf $(pwd)/.gitconfig ~/.gitconfig
 
