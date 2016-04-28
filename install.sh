@@ -55,6 +55,16 @@ if [ ! -d $PLUGINFOLDER/guavagenerators ]; then
 	git clone https://github.com/willmenn/guavagenerators.git $PLUGINFOLDER
 
 fi
+#Setting up ChromeDriver
+CHROMEDRIVER=$DEVFOLDER/chromeDriver
+mkdir -p $CHROMEDRIVER
+if [ ! -f $CHROMEDRIVER/chromedriver ]; then
+
+curl -o  $CHROMEDRIVER/chromeDriver.zip   http://chromedriver.storage.googleapis.com/2.21/chromedriver_mac32.zip 
+
+unzip $CHROMEDRIVER/chromeDriver.zip -d $CHROMEDRIVER
+
+fi
 
 #Setting git standup
 curl -L	https://raw.githubusercontent.com/kamranahmedse/git-standup/master/installer.sh  | sudo sh
