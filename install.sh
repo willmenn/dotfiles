@@ -78,7 +78,11 @@ ln -sf $(pwd)/.zshrc  ~/.zshrc
 
 ln -sf $(pwd)/.vimrc ~/.vimrc
 
-ln -sf $(pwd)/.ideiavimrc ~/.ideiavimrc
+ln -sf $(pwd)/.ideavimrc ~/.ideavimrc
+
+if [ -d ~/.vim ]; then
+	rm -r ~/.vim
+fi
 
 ln -sf $(pwd)/.vim  ~/.vim
 
