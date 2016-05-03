@@ -18,7 +18,7 @@ set ruler		" show cursor position in status bar
 call plug#begin('~/.vim/plugged')
 
 "Installing hard mode
-Plug 'https://github.com/wikitopian/hardmode.git'
+Plug 'https://github.com/willmenn/hardmode.git'
 
 "Instlling nerdtree
 Plug 'https://github.com/scrooloose/nerdtree.git'
@@ -29,12 +29,16 @@ Plug 'https://github.com/ryanoasis/vim-devicons.git'
 "Enabling Hard mode
 autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
 
+"Installing Emmet for HTML/CSS Editing
+Plug 'https://github.com/mattn/emmet-vim.git'
+
 call plug#end()
 
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 map <C-n> :NERDTreeToggle<CR>
+map <C-j> <C-W>j
 
 "Setting backup folder, swap folder and undo folder.
 set backup
