@@ -51,6 +51,7 @@
 	co = checkout
 	df = diff --color --color-words --abbrev
 	lg = log --color --graph
+	lgf = log --name-only --oneline
 	st = stash
 [url "https://"]
 	insteadOf = git://
