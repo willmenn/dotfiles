@@ -98,5 +98,7 @@ ln -sf $(pwd)/.bash_profile ~/.bash_profile
 
 ln -sf $(pwd)/.alias ~/.alias
 
+ln -sf $(pwd)/.functions ~/.functions
+
 vim +PlugInstall +PlugClean +qall
 

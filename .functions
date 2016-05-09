@@ -1,0 +1,11 @@
+function chg {
+
+if [ "$1" = "jdk" ] || [ "$1" = "java" ];then
+
+	if [ "$2" = "6" ];then
+		echo "changing java for java6"
+	fi
+
+fi
+
+}
