@@ -47,6 +47,14 @@ if [ ! -f $ANTFOLDER/ant.zip ]; then
 	unzip $ANTFOLDER/ant.zip -d $ANTFOLDER/1.9.7
 fi
 
+#Setting Ant Apache 1.7
+mkdir -p $ANTFOLDER/1.7
+if [ ! -f $ANTFOLDER/ant-1.7.zip ]; then
+
+	curl -o $ANTFOLDER/ant-1.7.zip http://archive.apache.org/dist/ant/binaries/apache-ant-1.7.0-bin.zip
+
+	unzip $ANTFOLDER/ant-1.7.zip -d $ANTFOLDER/1.7
+fi
 #Setting guava plugin for IntelliJ
 PLUGINFOLDER=$DEVFOLDER/Plugin
 mkdir -p $PLUGINFOLDER
