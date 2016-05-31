@@ -1,2 +1,4 @@
 set number
 set textwidth=79
+
+imap jj <ESC> "Remaping vim Escape to jj  
