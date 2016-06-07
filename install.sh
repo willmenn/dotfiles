@@ -1,4 +1,7 @@
-cat banner
+source colors.sh
+BANNER=$(cat banner)
+
+printf "${BLUE}${BANNER}${NC}"
 
 sh  -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
