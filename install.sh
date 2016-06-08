@@ -28,7 +28,7 @@ if [ ! -f $1 ]; then
 
 	printf "${GREEN}$4 successful instaled!!!\n${NC}"
 else
-	printf "${RED} could not download dependence $4${NC}\n"
+	printf "${RED}Could not download dependence $4${NC}\n"
 fi
 
 }
