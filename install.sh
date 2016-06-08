@@ -1,7 +1,7 @@
 source colors.sh
 BANNER=$(cat banner)
 
-printf "${BLUE}${BANNER}${NC}"
+printf "${BLUE}${BANNER}${NC}\n"
 
 sh  -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
@@ -17,68 +17,55 @@ DEVFOLDER=~/Documents/Desenvolvimento
 mkdir $DEVFOLDER
 mkdir $DEVFOLDER/Workspace
 
+function downloadDependences {
+# $1 = zip $2 = url $3 = folder $4 = name
+if [ ! -f $1 ]; then 
+	mkdir -p $3
+
+	curl -so $1 $2
+
+	unzip -qq $1 -d $3
+
+	printf "${GREEN}$4 successful instaled!!!\n${NC}"
+else
+	printf "${RED} could not download dependence $4${NC}"
+fi
+
+}
 #Setting Maven
 MAVENFOLDER=$DEVFOLDER/Maven
-mkdir -p $MAVENFOLDER/3.3.9
-if [ ! -f $MAVENFOLDER/maven.zip ]; then
+#mkdir -p $MAVENFOLDER/3.3.9
+MAVENURL=http://mirror.nbtelecom.com.br/apache/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.zip
+MAVENFOLDER_BIN=$MAVENFOLDER/3.3.9
+MAVENZIP=$MAVENFOLDER/maven.zip
+downloadDependences $MAVENZIP $MAVENURL $MAVENFOLDER_BIN Maven
 
-curl -o $MAVENFOLDER/maven.zip http://mirror.nbtelecom.com.br/apache/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.zip
-
-unzip $MAVENFOLDER/maven.zip -d $MAVENFOLDER/3.3.9
-
-fi
-
-#Setting Tomcat
 TOMCATFOLDER=$DEVFOLDER/Tomcat
-mkdir -p $TOMCATFOLDER/7.0.69
-if [ ! -f $TOMCATFOLDER/tomcat.zip ]; then
+TOMCATZIP=$TOMCATFOLDER/tomcat.zip
+TOMCATURL=http://ftp.unicamp.br/pub/apache/tomcat/tomcat-7/v7.0.69/bin/apache-tomcat-7.0.69.zip
+TOMCAT_BIN=$TOMCATFOLDER/7.0.69
+downloadDependences $TOMCATZIP $TOMCATURL $TOMCAT_BIN Tomcat
+#chmod +x $TOMCATFOLDER/7.0.69/apache-tomcat-7.0.69/bin/catalina.sh
 
-curl -o $TOMCATFOLDER/tomcat.zip	http://ftp.unicamp.br/pub/apache/tomcat/tomcat-7/v7.0.69/bin/apache-tomcat-7.0.69.zip
-
-unzip $TOMCATFOLDER/tomcat.zip -d $TOMCATFOLDER/7.0.69
-
-chmod +x $TOMCATFOLDER/7.0.69/apache-tomcat-7.0.69/bin/catalina.sh
-
-fi
 
 #Setting Ant Apache
 ANTFOLDER=$DEVFOLDER/AntApache
-mkdir -p $ANTFOLDER/1.9.7
-if [ ! -f $ANTFOLDER/ant.zip ]; then
-	curl -o $ANTFOLDER/ant.zip http://mirror.nbtelecom.com.br/apache//ant/binaries/apache-ant-1.9.7-bin.zip
+ANTFOLDER_BIN=$ANTFOLDER/1.9.7
+ANTURL=http://mirror.nbtelecom.com.br/apache//ant/binaries/apache-ant-1.9.7-bin.zip
+ANTZIP=$ANTFOLDER/ant.zip
+downloadDependences $ANTZIP $ANTURL $ANTFOLDER_BIN Ant_Apache
 
-	unzip $ANTFOLDER/ant.zip -d $ANTFOLDER/1.9.7
-fi
-
-#Setting Ant Apache 1.7
-mkdir -p $ANTFOLDER/1.7
-if [ ! -f $ANTFOLDER/ant-1.7.zip ]; then
-
-	curl -o $ANTFOLDER/ant-1.7.zip http://archive.apache.org/dist/ant/binaries/apache-ant-1.7.0-bin.zip
-
-	unzip $ANTFOLDER/ant-1.7.zip -d $ANTFOLDER/1.7
-fi
-#Setting guava plugin for IntelliJ
-PLUGINFOLDER=$DEVFOLDER/Plugin
-mkdir -p $PLUGINFOLDER
-if [ ! -d $PLUGINFOLDER/guavagenerators ]; then
-
-	git clone https://github.com/willmenn/guavagenerators.git $PLUGINFOLDER
-
-fi
 #Setting up ChromeDriver
 CHROMEDRIVER=$DEVFOLDER/chromeDriver
-mkdir -p $CHROMEDRIVER
-if [ ! -f $CHROMEDRIVER/chromedriver ]; then
+CHROMEDRIVER_URL=http://chromedriver.storage.googleapis.com/2.21/chromedriver_mac32.zip
+CHROMEDRIVER_ZIP=$CHROMEDRIVER/chromeDriver.zip
+CHROMEDRIVER_FILE=$CHROMEDRIVER/chromedriver
+downloadDependences $CHROMEDRIVER_ZIP $CHROMEDRIVER_URL $CHROMEDRIVER ChromeDriver
 
-curl -o  $CHROMEDRIVER/chromeDriver.zip   http://chromedriver.storage.googleapis.com/2.21/chromedriver_mac32.zip 
 
-unzip $CHROMEDRIVER/chromeDriver.zip -d $CHROMEDRIVER
-
-fi
 
 #Setting git standup
-curl -L	https://raw.githubusercontent.com/kamranahmedse/git-standup/master/installer.sh  | sudo sh
+curl -sL	https://raw.githubusercontent.com/kamranahmedse/git-standup/master/installer.sh  | sudo sh
 
 #Creating symbolic link for config files
 
