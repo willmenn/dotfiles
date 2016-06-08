@@ -22,16 +22,27 @@ function downloadDependences {
 if [ ! -f $1 ]; then 
 	mkdir -p $3
 
-	curl -so $1 $2
-
+	simpleDownload $1 $2 $4
+	
 	unzip -qq $1 -d $3
 
 	printf "${GREEN}$4 successful instaled!!!\n${NC}"
 else
-	printf "${RED} could not download dependence $4${NC}"
+	printf "${RED} could not download dependence $4${NC}\n"
 fi
 
 }
+
+function simpleDownload {
+
+	curl -so $1 $2
+
+	printf "${YELLOW} $3 downloaded${NC}\n"
+
+}
+
+
+
 #Setting Maven
 MAVENFOLDER=$DEVFOLDER/Maven
 #mkdir -p $MAVENFOLDER/3.3.9
@@ -65,7 +76,9 @@ downloadDependences $CHROMEDRIVER_ZIP $CHROMEDRIVER_URL $CHROMEDRIVER ChromeDriv
 
 
 #Setting git standup
-curl -sL	https://raw.githubusercontent.com/kamranahmedse/git-standup/master/installer.sh  | sudo sh
+curl -s https://raw.githubusercontent.com/kamranahmedse/git-standup/master/installer.sh  | sudo sh
+
+printf "${GREEN} git-standup successful installed${NC}\n"
 
 #Creating symbolic link for config files
 
