@@ -7,16 +7,23 @@ sh  -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/
 
 #Creating folders for backup,sawp and viminfo
 
-mkdir .vim/files
-mkdir .vim/files/backup
-mkdir .vim/files/swap
-mkdir .vim/files/info
+function createFolders {
 
+	if [ ! -d $1 ];  then
+	     mkdir -p $1
+	     printf "${ORANGE}$1 folder created${NC}\n"
+	else
+	     printf "${RED}$1 folder could not be created because it already exists!${NC}\n"
+	fi
+	
+}
+
+createFolders .vim/files
+createFolders .vim/files/backup
+createFolders .vim/files/swap
+createFolder .vim/files/info
 DEVFOLDER=~/Documents/Desenvolvimento
-
-mkdir $DEVFOLDER
-mkdir $DEVFOLDER/Workspace
-
+createFolders $DEVFOLDER/Workspace
 function downloadDependences {
 # $1 = zip $2 = url $3 = folder $4 = name
 if [ ! -f $1 ]; then 
