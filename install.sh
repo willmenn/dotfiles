@@ -18,12 +18,7 @@ function createFolders {
 	
 }
 
-createFolders .vim/files
-createFolders .vim/files/backup
-createFolders .vim/files/swap
-createFolder .vim/files/info
-DEVFOLDER=~/Documents/Desenvolvimento
-createFolders $DEVFOLDER/Workspace
+
 function downloadDependences {
 # $1 = zip $2 = url $3 = folder $4 = name
 if [ ! -f $1 ]; then 
@@ -47,6 +42,15 @@ function simpleDownload {
 	printf "${YELLOW} $3 downloaded${NC}\n"
 
 }
+
+#Creating folders
+createFolders .vim/files
+createFolders .vim/files/backup
+createFolders .vim/files/swap
+createFolder .vim/files/info
+
+DEVFOLDER=~/Documents/Desenvolvimento
+createFolders $DEVFOLDER/Workspace
 
 
 
