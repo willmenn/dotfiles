@@ -47,7 +47,7 @@ function simpleDownload {
 createFolders .vim/files
 createFolders .vim/files/backup
 createFolders .vim/files/swap
-createFolder .vim/files/info
+createFolders .vim/files/info
 
 DEVFOLDER=~/Documents/Desenvolvimento
 createFolders $DEVFOLDER/Workspace
