@@ -1,6 +1,9 @@
 
 #Setting Java Home
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home
+
+#Setting homebrew java folder
+export JAVA_FOLDER=/Library/Java/JavaVirtualMachines
 
 #Setting Maven
 export M2_HOME=/Users/wahrons/Documents/Desenvolvimento/Maven/3.3.9/apache-maven-3.3.9
