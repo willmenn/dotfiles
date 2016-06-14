@@ -39,8 +39,7 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 map <C-n> :NERDTreeToggle<CR>
 map <C-j> <C-W>j
-imap jj   <ESC> "Remaping ESC to jj in insert mode
-vnoremap jj <esc> "Remaping ESC to jj in visual mode
+
 "Setting backup folder, swap folder and undo folder.
 set backup
 set backupdir 	=~/.vim/files/backup/
