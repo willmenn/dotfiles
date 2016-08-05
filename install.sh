@@ -93,6 +93,7 @@ printf "${GREEN} git-standup successful installed${NC}\n"
 
 #Creating symbolic link for config files
 
+npm install --global git-recent
 
 ln -sf $(pwd)/.gitconfig ~/.gitconfig
 
