@@ -53,5 +53,6 @@
 	lg = log --color --graph
 	lgf = log --name-only --oneline
 	st = stash
+	master = "!f(){ git checkout master; git up; };f"
 [url "https://"]
 	insteadOf = git://
