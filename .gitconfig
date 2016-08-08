@@ -54,5 +54,9 @@
 	lgf = log --name-only --oneline
 	st = stash
 	master = "!f(){ git checkout master; git up; };f"
+	undo-commit = reset --soft HEAD~1
+	undo-commit-hard = reset --hard HEAD~1
+
+
 [url "https://"]
 	insteadOf = git://
