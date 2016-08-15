@@ -57,6 +57,7 @@
 	undo-commit = reset --soft HEAD~1
 	undo-commit-hard = reset --hard HEAD~1
 	branchs = branch --all
+	remotes= remote -v
 
 
 [url "https://"]
