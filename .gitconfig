@@ -59,6 +59,7 @@
 	branchs = branch --all
 	remotes= remote -v
 
+	edit-unmerged = !"f() { git ls-files --unmerged | cut -f2 | sort -u ; }; `git var GIT_EDITOR` `f`"
 
 [url "https://"]
 	insteadOf = git://
