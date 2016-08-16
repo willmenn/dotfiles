@@ -54,6 +54,8 @@
 	lgf = log --name-only --oneline
 	st = stash
 	master = "!f(){ git checkout master; git up; };f"
+	go = "!f(){ git checkout $1; };f"
+	gob = "!f(){ git checkout -b $1; };f"
 	undo-commit = reset --soft HEAD~1
 	undo-commit-hard = reset --hard HEAD~1
 	branchs = branch --all
