@@ -23,6 +23,7 @@ brew install zsh
 brew install figlet
 sudo brew cask install postgres
 brew install svn
+brew install tig
 
 # Installing Docker and Dependences
 sudo brew cask install virtualbox #Executing as sudo
