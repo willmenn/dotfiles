@@ -1,4 +1,4 @@
-# Path to your oh-my-zsh installation.
+#Path to your oh-my-zsh installation.
 export ZSH=/Users/wahrons/.oh-my-zsh
 
 ZSH_THEME="pygmalion"
@@ -14,3 +14,4 @@ source ~/.bash_profile
 source ~/.alias
 
 source ~/.functions
+
