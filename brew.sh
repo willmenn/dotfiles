@@ -13,6 +13,7 @@ brew cask install google-chrome-canary
 brew cask install 1password
 brew cask install vlc
 brew cask install slack
+brew cask install telegram-desktop
 
 # Installing commum cli tools
 brew install git
@@ -24,6 +25,7 @@ brew install figlet
 sudo brew cask install postgres
 brew install svn
 brew install tig
+brew install mongo
 
 # Installing Docker and Dependences
 sudo brew cask install virtualbox #Executing as sudo
