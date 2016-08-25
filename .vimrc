@@ -39,6 +39,7 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 map <C-n> :NERDTreeToggle<CR>
 map <C-j> <C-W>j
+map <Tab> :bn<CR>
 
 "Setting backup folder, swap folder and undo folder.
 set backup
