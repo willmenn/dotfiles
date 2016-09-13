@@ -14,6 +14,7 @@ brew cask install 1password
 brew cask install vlc
 brew cask install slack
 brew cask install telegram-desktop
+brew cask install spectacle
 
 # Installing commum cli tools
 brew install git
