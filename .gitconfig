@@ -35,14 +35,16 @@
 
 [color "branch"]
 	current = yellow reverse
-	local = blue reverse
-	remote = green
+	#local = blue reverse
+	#remote = green
 [iterative]
 	diffFilter = "diff-so-fancy"
 
 [alias]
 	c = commit -am
-	up = pull
+	cb = "!f(){  git branch | grep \\* | sed 's/[^a-zA-Z0-9-//]//g' | sed 's/[*m]//g'; };f" 
+	up = "!f(){ git pull origin $1; };f"
+	up1 = "!f() { git config --local color.branch.current \"\"; git up $(git cb); git config --local --unset color.branch.current; };f"
 	upr = pull --rebase
 	rc = rebase --continue 
 	p = push
