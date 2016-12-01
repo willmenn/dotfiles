@@ -16,6 +16,10 @@ brew cask install slack
 brew cask install telegram-desktop
 brew cask install spectacle
 
+# Installing Fira Code font
+brew tap caskroom/fonts
+brew cask install font-fira-code
+
 # Installing commum cli tools
 brew install git
 brew install tree
