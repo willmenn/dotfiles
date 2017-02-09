@@ -15,6 +15,9 @@ set textwidth=79	" break the line when gets in 79 char
 set autoindent smartindent " turn on auto/smart indenting
 set ruler		" show cursor position in status bar
 
+" enable line numbers
+let NERDTreeShowLineNumbers=1
+
 call plug#begin('~/.vim/plugged')
 
 "Installing hard mode
