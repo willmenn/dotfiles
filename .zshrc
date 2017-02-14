@@ -5,6 +5,9 @@ ZSH_THEME="pygmalion"
 
 plugins=(git)
 
+# Vim Mode ON
+bindkey -v
+
 # User configuration
 
 source $ZSH/oh-my-zsh.sh
@@ -15,3 +18,6 @@ source ~/.alias
 
 source ~/.functions
 
+
+export NVM_DIR="/Users/wahrons/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
