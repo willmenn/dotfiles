@@ -47,6 +47,9 @@ brew install jenv
 
 brew install diff-so-fancy
 
+#Add zshell autocomplete
+brew install zsh-autosuggestions
+
 brew cleanup
 
 

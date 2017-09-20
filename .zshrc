@@ -18,6 +18,13 @@ source ~/.alias
 
 source ~/.functions
 
+autoload -U colors && colors
+
 
 export NVM_DIR="/Users/wahrons/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# added by travis gem
+[ -f /Users/wahrons/.travis/travis.sh ] && source /Users/wahrons/.travis/travis.sh
+
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
