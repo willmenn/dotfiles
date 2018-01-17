@@ -22,8 +22,9 @@ export CHROME_DRIVER=/Users/wahrons/Documents/Desenvolvimento/chromeDriver/chrom
 #Setting Postgres
 export POSTGRES_HOME=/Applications/Postgres.app/Contents/Versions/9.5
 
+#Setting Go
+export GO_HOME=/usr/local/go
+
 #Setting PATH
-export PATH=${PATH}:${JAVA_HOME}/bin:${M2_HOME}/bin:${ANT_HOME}/bin:${GRADLE_HOME}/bin:${CATALINA_HOME}/bin:${POSTGRES_HOME}/bin
-
-
+export PATH=${PATH}:${JAVA_HOME}/bin:${M2_HOME}/bin:${ANT_HOME}/bin:${GRADLE_HOME}/bin:${CATALINA_HOME}/bin:${POSTGRES_HOME}/bin:${GO_HOME}/bin
 
