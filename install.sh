@@ -95,6 +95,9 @@ printf "${GREEN} git-standup successful installed${NC}\n"
 
 npm install --global git-recent
 
+#Installing Git Open, https://github.com/paulirish/git-open
+npm install --global git-open
+
 ln -sf $(pwd)/.gitconfig ~/.gitconfig
 
 ln -sf $(pwd)/.gitignore_global ~/.gitignore_global
