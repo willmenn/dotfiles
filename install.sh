@@ -91,6 +91,8 @@ curl -s https://raw.githubusercontent.com/kamranahmedse/git-standup/master/insta
 
 printf "${GREEN} git-standup successful installed${NC}\n"
 
+ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
 #Creating symbolic link for config files
 
 npm install --global git-recent

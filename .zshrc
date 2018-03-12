@@ -3,7 +3,7 @@ export ZSH=/Users/wahrons/.oh-my-zsh
 
 ZSH_THEME="pygmalion"
 
-plugins=(git)
+plugins=(git zsh-syntax-highlighting)
 
 # Vim Mode ON
 bindkey -v
@@ -28,3 +28,4 @@ export NVM_DIR="/Users/wahrons/.nvm"
 [ -f /Users/wahrons/.travis/travis.sh ] && source /Users/wahrons/.travis/travis.sh
 
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+ZSH_THEME=pygmalion
