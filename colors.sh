@@ -1,16 +1,16 @@
 #This file is all colors to make tha bash pretty.
 
 
-RED='\033[0;31m'
+export RED='\033[0;31m'
 
-BLUE='\033[0;34m'
+export BLUE='\033[0;34m'
 
-GREEN='\033[0;32m'
+export GREEN='\033[0;32m'
 
-PURPLE='\033[0;35m'
+export PURPLE='\033[0;35m'
 
-ORANGE='\033[0;33m'
+export ORANGE='\033[0;33m'
 
-YELLOW='\033[1;33m'
+export YELLOW='\033[1;33m'
 
-NC='\033[0m'
+export NC='\033[0m'
