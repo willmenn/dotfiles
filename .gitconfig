@@ -57,6 +57,7 @@
 	lgf = log --name-only --oneline
 	st = stash
 	master = "!f(){ git go master; git up; };f"
+	cl  = "!f(){ git reset --hard HEAD~10; git pull origin master -r ; clear; printf "${GREEN}Master is Updated."; };f"
 	go = "!f(){ git checkout $1 $2; };f"
 	gob = "!f(){ git go -b $1; };f"
 	undo-commit = reset --soft HEAD~1
